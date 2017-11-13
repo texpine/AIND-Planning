@@ -34,7 +34,7 @@ def conjunctive_sentence(pos_list, neg_list):
     return associate('&', clauses)
 
 
-def encode_state(fs: FluentState, fluent_map: list) -> str:
+def encode_state(fs: FluentState, fluent_map: list):# -> str:
     """ encode fluents to a string of T/F using mapping
 
     :param fs: FluentState object
@@ -50,7 +50,7 @@ def encode_state(fs: FluentState, fluent_map: list) -> str:
     return "".join(state_tf)
 
 
-def decode_state(state: str, fluent_map: list) -> FluentState:
+def decode_state(state: str, fluent_map: list):# -> FluentState:
     """ decode string of T/F as fluent per mapping
 
     :param state: str eg. "TFFTFT" string of mapped positive and negative fluents
